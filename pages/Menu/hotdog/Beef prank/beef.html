@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB's Beef burger</title>
+  
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+ 
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+
+<header class="header">
+    <div class="icons">
+        <div class="fas fa-share" id="theme-btn" onclick="history.back()"></div>
+    </div>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> JB's Yard </a>
+
+    <div></div>
+</header>
+
+<!-- header section ends -->
+
+<!-- body section starts -->
+    
+<!-- br tag for big space -->
+<p class="br"></p>
+<!-- br tag end-->
+
+<section class="blogs" id="blogs">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up">
+
+            <section class="pricing" id="pricing">
+
+                <div class="box-container">
+
+                    <div class="box" data-aos="zoom-in-up">
+
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="images/beef1.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="images/beef2.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="images/beef3.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="images/beef4.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="images/beef5.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="images/beef6.jpg" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="images/beef1.jpg" style="width:100% " onclick="currentSlide(1)" alt="JB's Beef burger">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="images/beef2.jpg" style="width:100%" onclick="currentSlide(2)" alt="JB's Beef burger">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="images/beef3.jpg" style="width:100%" onclick="currentSlide(3)" alt="JB's Beef burger">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="images/beef4.jpg" style="width:100%" onclick="currentSlide(4)" alt="JB's Beef burger">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="images/beef5.jpg" style="width:100%" onclick="currentSlide(5)" alt="JB's Beef burger">
+                                </div>    
+                                <div class="column">
+                                    <img class="demo cursor" src="images/beef6.jpg" style="width:100%" onclick="currentSlide(6)" alt="JB's Beef burger">
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+
+                            function showSlides(n) {
+                              let i;
+                              let slides = document.getElementsByClassName("mySlides");
+                              let dots = document.getElementsByClassName("demo");
+                              let captionText = document.getElementById("caption");
+                              if (n > slides.length) {slideIndex = 1}
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";
+                              dots[slideIndex-1].className += " active";
+                              captionText.innerHTML = dots[slideIndex-1].alt;
+                            }
+                        </script>
+                            <h3 class="heading"> JB's <span>Yards</span> </h3>
+                        <div class="content">
+                            
+                            <div class="icons">
+                                <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2022 </a>
+                                <a href="#"> <i class="fas fa-user"></i> by JB's Yard </a>
+                            </div>
+                            <h3 class="heading">JB's <span>Beef burger</span> </h3>
+                            
+                                        
+                            <center>
+                                <div class="price">
+                                    <span>₱</span>
+                                    <span class="amount" >70</span>
+                                    <span>/pcs</span>
+                                </div>
+                            </center>
+                            
+                            <a href="pages/checkout-page/Buy now.html" class="btn">Buy now</a>
+
+                        <br><br><br>
+                        </div>
+
+                        <ul>
+                            <li><strong>Discription</strong></li>
+                            <li>From a calorie standpoint, the hot dog is the winner, but from an overall perspective, the hamburger is a better option. The 4-ounce hamburger has about six times the amount of protein as a hot dog, but about a quarter of the sodium. Nutritionally, that's a better bargain.Hot dogs are made of animal parts, but they aren't leftovers. They're the same stuff that you would make into ground beef or ground pork. The trimmings used to make hot dogs are pieces of the meat that don't make good steaks and roasts because they aren't a certain tenderness, size, shape or weight.” </li>
+                            <li><strong>Ingredients</strong></li>
+                            <li> 1 pound ground beef (80% lean) salt and freshly ground black pepper to taste 2 slices Cheddar cheese 2 extra-long hot dog buns 4 teaspoons mayonnaise 2 tablespoons ketchup</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!-- body section ends-->
+
+<!-- br tag for big space -->
+<p class="br1"></p>
+<!-- br tag end-->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <center>   
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <h3>Our Location</h3>
+                <a href="https://www.google.com/search?sxsrf=APwXEdearcILQ6-rSxUpiPmSL8MWap3WlA:1683334459281&q=jb%E2%80%99s+yard+gasan+address&ludocid=10117313259002839731&sa=X&ved=2ahUKEwie6u7Dvd_-AhVba2wGHXg9CYgQ6BN6BAg-EAI&biw=1242&bih=597&dpr=1.1"> <i class="fas fa-map-marker-alt"></i> Gasan Marinduque </a>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <h3>contact us</h3>
+                <a href="pages/Message/message.html"> <i class="fas fa-message"></i> Message Us </a>
+                
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <h3>follow us</h3>
+                <a href="https://www.google.com/search?q=jb%E2%80%99s+yard+gasan&biw=1242&bih=597&sxsrf=APwXEde6aRK01KtwPWBX-sPT51eQYws23A%3A1683334596654&ei=xKVVZKvGJ-DhseMP6vq68Aw&ved=0ahUKEwiruK-Fvt_-AhXgcGwGHWq9Ds4Q4dUDCA8&uact=5&oq=jb%E2%80%99s+yard+gasan&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQogQQsAMyCAgAEKIEELADMggIABCiBBCwA0oECEEYAVCXC1iXC2CVEWgBcAB4AIABAIgBAJIBAJgBAKABAcgBA8ABAQ&sclient=gws-wiz-serp"> <i class="fab fa-google"></i> google </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            </div>
+        </div>
+
+    </center>
+
+    <div class="credit"> created by <a href="pages/BSIC_2C-G5/Members.html"> BSIT 2C/Group 5</a> | all rights reserved </div>
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>

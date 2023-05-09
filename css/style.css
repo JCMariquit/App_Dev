@@ -82,7 +82,7 @@ section{
 .btn1{
     margin-top: 1rem;
     display: inline-block;
-    padding:2rem 6rem;
+    padding:1rem 4rem;
     font-size: 2.7rem;
     color:#fff;
     background:#ab6806;
@@ -213,6 +213,7 @@ section{
     background:var(--bg-color-2);
     padding-left: 2rem;
 }
+
  
 .home{
     display: flex;
