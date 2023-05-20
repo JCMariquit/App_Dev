@@ -5,7 +5,7 @@
     --yellow: #FFFF00;
     --text-color-1:#444;
     --text-color-2:#000000;
-    --bg-color-1:#ffcc33;
+    --bg-color-1:#87ceeb;
     --bg-color-2:#eee;
     --bg-color-3:#fff;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -211,7 +211,7 @@ section{
 
 .pricing .box-container .box h3{
     padding:1rem;
-    background: var(--bg-color-2);
+    background: var(--bg-color-3);
     border-radius: .5rem;
     font-size: 2rem;
     color:var(--text-color-1);

@@ -5,7 +5,7 @@
     --yellow: #FFFF00;
     --text-color-1:#444;
     --text-color-2:#000000;
-    --bg-color-1:#ffcc33;
+    --bg-color-1:#87ceeb;
     --bg-color-2:#eee;
     --bg-color-3:#fff;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -209,26 +209,8 @@ section{
     font-weight: bolder;
 }
 
-
-
-.pricing .box-container .box ul{
-    padding: .5rem 0;
-    list-style: none;
-}
-
-.pricing .box-container .box ul li{
-    padding: 1rem 0;
-    font-size: 1.7rem;
-    color:var(--text-color-2);
-}
-.placeorder .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
 .placeorder .box-container .box{
-    background:var(--bg-color-2);
+    background:var(--bg-color-3);
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
     padding:3rem;

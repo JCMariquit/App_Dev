@@ -2,12 +2,13 @@
 
 :root{
     --red:#FF0000;
-    --yellow: #FFFF00;
+    --yellow: #87ceeb;
     --text-color-1:#444;
     --text-color-2:#000000;
-    --bg-color-1:#ffcc33;
+    --bg-color-1:#87ceeb;
     --bg-color-2:#eee;
     --bg-color-3:#fff;
+    --bg-color-4: rgba(255, 255, 255, .7);
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
@@ -42,9 +43,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:var(--bg-color-3);
+    background-image: url('Refreshmenthub.jpg');
 }
-
 body.active{
     --text-color-1:#fff;
     --text-color-2:#eee;
@@ -168,7 +168,7 @@ section{
 }
 
 .pricing .box-container .box{
-    background:var(--bg-color-2);
+    background:var(--bg-color-4);
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
     padding:2rem;

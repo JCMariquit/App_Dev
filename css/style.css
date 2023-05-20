@@ -79,7 +79,7 @@ section{
 .btn1{
     margin-top: 1rem;
     display: inline-block;
-    padding:1rem 3rem;
+    padding:1rem 6rem;
     font-size: 2.7rem;
     color:#fff;
     background:#006400;
@@ -260,7 +260,7 @@ section{
 .form-container form{
     background: var(--bg-color-4);
     box-shadow: var(--box-shadow);
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     padding:2rem;
     display: flex;
     flex-wrap: wrap;
@@ -274,14 +274,14 @@ section{
 
 .form-container form .inputBox span{
     font-size: 1.7rem;
-    color:var(--text-color-2);
+    color:var(--text-color-3);
 }
 
 .form-container form .inputBox input{
     font-size: 1.5rem;
     color:var(--text-color-1);
-    background:var(--bg-color-2);
-    border-radius: .5rem;
+    background:var(--bg-color-3);
+    border-radius: 1rem;
     margin:.5rem 0;
     text-transform: none;
     width: 100%;
@@ -477,6 +477,9 @@ section{
 }
 .br3{
     margin-bottom: 5em;
+}
+.br4{
+    margin-bottom: 2em;
 }
 
 
