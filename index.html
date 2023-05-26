@@ -7,7 +7,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<title>Log in & Sign in</title>
+
+	<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
 </head>
+
+<style>
+body {
+  background-image: url('pages/BSIC_2C-G5/css/back.png');
+}
+</style>
+
 <body>
 
 <div class="navbar navbar-default">
@@ -24,49 +33,64 @@
 <div class="container">	
 
 	<form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data" >
-	<div class="col-sm-4">
-		<div class="form-group">
-	      <label for="email">Email</label>
-		  <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Enter your email">
+		<div class="col-sm-4">
+			<p class="br"></p>
+			<div class="form-group">
+		      <label class="label" for="email">Email</label>
+			  <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Enter your email">
+			</div>
+			
+			<div class="form-group">
+		      <label class="label" for="password">Password</label>
+			  <input type="password" name="login_password" id="login_password" class="form-control"  placeholder="Enter your password">
+			</div>
+			<center>
+				<button type="button" id="login" name="login" class="btn btn-success">Login</button>
+			</center>
+			<br>
+			<center>
+				<a href="#name" class="label">I dont have a account</a>
+			</center>
+			<p class="br"></p>
+		</div><!-- end col -->
+		<div class="col-sm-4">
+			<center>
+				<img src="images/Logo/logo.png" style="width:250px;height:250px;">
+			</center>
 		</div>
-		
-		<div class="form-group">
-	      <label for="password">Password</label>
-		  <input type="password" name="login_password" id="login_password" class="form-control"  placeholder="Enter your password">
-		</div>
-		<button type="button" id="login" name="login" class="btn btn-success">Login</button>
-	</div><!-- end col -->
-	<div class="col-sm-4">
-		<center>
-			<img src="images/Logo/logo.png" style="width:300px;height:300px;">
-		</center>
-	</div>
-  <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data" >
-  <div class="row">
-	<div class="col-sm-4">
+	  	<form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data" >
+		  	<div class="row">
+				<div class="col-sm-4">
 
-		<div class="form-group">
-	      <label for="name">Name</label>
-		  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
-		</div>
+					<div class="form-group">
+				      <label class="label" for="name">Name</label>
+					  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+					</div>
 
-		<div class="form-group">
-	      <label for="email">Email</label>
-		  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
-		</div>
-		
-		<div class="form-group">
-	      <label for="password" >Password</label>
-		  <input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password">
-		</div>
-		<button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
-	</div><!-- end col -->
-	</form>
-  </div><!--  end row -->		
+					<div class="form-group">
+				      <label class="label" for="email">Email</label>
+					  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+					</div>
+					
+					<div class="form-group">
+				      <label class="label" for="password" >Password</label>
+					  <input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password">
+					</div>
+					<center>
+						<button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
+					</center>
+					<br><br>
+					<center>
+						<a href="#login_email" class="label">I already have a account</a>
+					</center>
+				</div><!-- end col -->
+			</div>
+		</form>	
   </form>
 </div>
 <br>
-<center>Developed by <a href="pages/BSIC_2C-G5/Members.html">BSIT 2C/Group 5</a></center>
+<center><label class="label">	Developed by</label><a href="pages/BSIC_2C-G5/Members.html"><label class="label">BSIT 2C/Group 5</label></a></center>
+<p class="br"></p>
 </body>
 	<script type="module">
 	  // Import the functions you need from the SDKs you need
