@@ -5,9 +5,10 @@
     --yellow: #FFFF00;
     --text-color-1:#444;
     --text-color-2:#000000;
-    --bg-color-1:#ffcc33;
+    --bg-color-1:#87ceeb;
     --bg-color-2:#eee;
     --bg-color-3:#fff;
+    --bg-color-4: rgba(255, 255, 255, .4);
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
@@ -41,10 +42,9 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
-body{
-    background:var(--bg-color-2);
+body {
+  background-image: url('back.png');
 }
-
 body.active{
     --text-color-1:#fff;
     --text-color-2:#eee;
@@ -61,7 +61,7 @@ section{
     text-align: center;
     padding-bottom: 2rem;
     color:var(--text-color-1);
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .heading span{
@@ -164,24 +164,72 @@ section{
     background:var(--bg-color-2);
     padding-left: 2rem;
 }
- 
 
-
-.blogs .box-container .box{
-    background:var(--bg-color-1);
-    border-radius: .5rem;
+.pricing .box-container .box{
+    background:var(--bg-color-4);
+    border-radius: 2rem;
     box-shadow: var(--box-shadow);
     padding:2rem;
+    text-align: left;
+}
+
+.pricing .box-container .box h3{
+    padding:1rem;
+    background: var(--bg-color-3);
+    border-radius: 331.5rem;
+    font-size: 2.5rem;
+    color:var(--text-color-1);
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
-.blogs .box-container .box .content h3{
-   font-size: 2rem;
-   color:var(--text-color-1);
-   line-height: 1.5;
+
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
 }
 
-.blogs .box-container .box .content .icons{
+.packages .box-container .box{
+    background:var(--bg-color-3);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.packages .box-container .box .image{
+    height:25rem;
+    width: 100%;
+    padding:1.5rem;
+    position: relative;
+}
+
+.packages .box-container .box .image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .image{
+    height: 20rem;
+    width: 100%;
+    overflow:hidden;
+    border-radius: .5rem;
+    background: var(--bg-color-2);
+}
+
+.packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.packages .box-container .box:hover .image img{
+    transform:scale(1.2);
+}
+
+.packages .box-container .box .content .icons{
     display: flex;
     justify-content: space-between;
     border-top: .1rem solid var(--text-color-2);
@@ -189,64 +237,169 @@ section{
     padding-top: 1.5rem;
 }
 
-.blogs .box-container .box .content .icons a{
+.packages .box-container .box .content .icons a{
     font-size: 1.5rem;
     color:var(--text-color-2);
 }
 
-
-.pricing .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+.packages .box-container .box .content .icons a:hover{
+    color:var(--orange);
 }
 
-.pricing .box-container .box{
-    background:var(--bg-color-3);
-    border-radius: 2rem;
-    box-shadow: var(--box-shadow);
-    padding:3rem;
-    text-align: left;
+.packages .box-container .box .content .icons a i{
+    padding-right: .5rem;
+    color:var(--text-color-1);
 }
 
-.pricing .box-container .box h3{
-    padding:1rem;
-    background: var(--bg-color-2);
+
+.packages .box-container .box .image h3{
+    position: absolute;
+    top:2.5rem; left:1.8rem;
+    font-size: 2rem;
+    color:#fff;
+    background: rgba(0,0,0,.5);
     border-radius: .5rem;
-    font-size: 2rem;
+    font-weight: lighter;
+    padding:.5rem 1.5rem;
+}
+
+.packages .box-container .box .image h3 i{
+    color:var(--orange);
+}
+
+.packages .box-container .box .content{
+    padding:1.5rem;
+    padding-top: 0;
+}
+
+.packages .box-container .box .content .price{
+    font-weight: 600;
     color:var(--text-color-1);
+    font-size: 2.5rem;
 }
 
-.pricing .box-container .box .price{
-    padding-top: 2rem;
+.packages .box-container .box .content .price span{
+    font-weight: lighter;
+    color:var(--text-color-2);
+    font-size: 1.5rem;
+    text-decoration: line-through;
 }
 
-.pricing .box-container .box .price span{
-    font-size: 2rem;
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:var(--text-color-2);
+    line-height: 1.7;
+}
+ 
+.leader .box-container{
+    display: grid;
+    width:  32em;
+    gap: 0.2rem;
+}
+
+.leader .box-container .box{
+    background:var(--bg-color-3);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.leader .box-container .box .image{
+    height:25rem;
+    width: 100%;
+    padding:1.5rem;
+    position: relative;
+}
+
+.leader .box-container .box .image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.leader .box-container .box .image{
+    height: 20rem;
+    width: 100%;
+    overflow:hidden;
+    border-radius: .5rem;
+    background: var(--bg-color-2);
+}
+
+.leader .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.leader .box-container .box:hover .image img{
+    transform:scale(1.2);
+}
+
+.leader .box-container .box .content .icons{
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid var(--text-color-2);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+.leader .box-container .box .content .icons a{
+    font-size: 1.5rem;
     color:var(--text-color-2);
 }
 
-.pricing .box-container .box .price .amount{
-    font-size: 3rem;
+.leader .box-container .box .content .icons a:hover{
+    color:var(--orange);
+}
+
+.leader .box-container .box .content .icons a i{
+    padding-right: .5rem;
     color:var(--text-color-1);
-    font-weight: bolder;
 }
 
-.pricing .box-container .box ul{
-    padding: .5rem 0;
-    list-style: none;
+
+.leader .box-container .box .image h3{
+    position: absolute;
+    top:2.5rem; left:1.8rem;
+    font-size: 2rem;
+    color:#fff;
+    background: rgba(0,0,0,.5);
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding:.5rem 1.5rem;
 }
 
-.pricing .box-container .box ul li{
-    padding: 1rem 0;
-    font-size: 1.7rem;
+.leader .box-container .box .image h3 i{
+    color:var(--orange);
+}
+
+.leader .box-container .box .content{
+    padding:1.5rem;
+    padding-top: 0;
+}
+
+.leader .box-container .box .content .price{
+    font-weight: 600;
+    color:var(--text-color-1);
+    font-size: 2.5rem;
+}
+
+.leader .box-container .box .content .price span{
+    font-weight: lighter;
     color:var(--text-color-2);
+    font-size: 1.5rem;
+    text-decoration: line-through;
 }
 
-
+.leader .box-container .box .content p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:var(--text-color-2);
+    line-height: 1.7;
+}
 .br {margin-bottom: 10em}
 .br1 {margin-bottom: 30em}
-
+.br2{margin-bottom: 3em;}
 .footer{
     background: var(--bg-color-1);
 }
@@ -291,42 +444,4 @@ section{
 
 .footer .credit span{
     color:var(--red);
-}
-
-
-/* media queries  */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    .header{
-        padding:1.5rem 2rem;
-    }
-
-    section{
-        padding:2rem;
-    }
-
-}
-
-@media (max-width:768px){
-
-    .header .navbar{
-        right: 2rem;
-    }
-
-    .header .login-form{
-        right: 2rem;
-    }
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
 }

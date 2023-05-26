@@ -8,7 +8,7 @@
     --bg-color-1:#87ceeb;
     --bg-color-2:#eee;
     --bg-color-3:#fff;
-    --bg-color-4: rgba(255, 255, 255, .7);
+    --bg-color-4: rgba(255, 255, 255, .4);
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
@@ -165,145 +165,41 @@ section{
     padding-left: 2rem;
 }
 
-.pricing .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
 .pricing .box-container .box{
     background:var(--bg-color-4);
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
-    padding:3rem;
+    padding:2rem;
     text-align: left;
 }
 
-.fix .box-container{
-    display: grid;
-    height: 30em;
-    width: 40em;
-}
-
-.fix .box-container .box{
-    background:var(--bg-color-3);
-    border-radius: 1.5rem;
-    box-shadow: var(--box-shadow);
-}
-
-.fix .box-container .box .image{
-    height:45rem;
-    width: 100%;
-    padding:1.5rem;
-    position: relative;
-}
-
-.fix .box-container .box .image img{
-    height:100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: .5rem;
-}
-    
-.fix .box-container .box .image{
-    height: 30rem;
-    width: 100%;
-    overflow:hidden;
-    border-radius: .5rem;
-    background: var(--bg-color-2);
-}
-
-.fix .box-container .box .image img{
-    height: 100%;
-    width: 100%;
-}
-
-.fix .box-container .box:hover .image img{
-    transform:scale(1.2);
-}
-
-.fix .box-container .box .content .icons{
-    display: flex;
-    justify-content: space-between;
-    border-top: .1rem solid var(--text-color-2);
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-}
-
-.fix .box-container .box .content .icons a{
-    font-size: 1.5rem;
-    color:var(--text-color-2);
-}
-
-.fix .box-container .box .content .icons a:hover{
-    color:var(--orange);
-}
-fix
-.fix .box-container .box .content .icons a i{
-    padding-right: .5rem;
-    color:var(--text-color-1);
-}
-
-
-.fix .box-container .box .image h3{
-    position: absolute;
-    top:2.5rem; left:1.8rem;
-    font-size: 2rem;
-    color:#fff;
-    background: rgba(0,0,0,.5);
-    border-radius: .5rem;
-    font-weight: lighter;
-    padding:.5rem 1.5rem;
-}
-
-.fix .box-container .box .image h3 i{
-    color:var(--orange);
-}
-
-.fix .box-container .box .content{
-    padding:1.5rem;
-    padding-top: 0;
-}
-
-.fix .box-container .box .content .price{
-    font-weight: 200;
-    color:var(--text-color-1);
+.pricing .box-container .box h3{
+    padding:1rem;
+    background: var(--bg-color-3);
+    border-radius: 331.5rem;
     font-size: 2.5rem;
+    color:var(--text-color-1);
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
-
-.fix .box-container .box .content .price span{
-    font-weight: lighter;
-    color:var(--text-color-2);
-    font-size: 1.5rem;
-    text-decoration: line-through;
-}
-
-.fix .box-container .box .content p{
-    font-size: 1.5rem;
-    padding:.5rem 0;
-    color:var(--text-color-2);
-    line-height: 1.7;
-}
-
-
-
 
 
 
 .packages .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
 .packages .box-container .box{
     background:var(--bg-color-3);
-    border-radius: 1.5rem;
+    border-radius: .5rem;
     box-shadow: var(--box-shadow);
 }
 
 .packages .box-container .box .image{
-    height:45rem;
+    height:25rem;
     width: 100%;
     padding:1.5rem;
     position: relative;
@@ -317,7 +213,7 @@ fix
 }
 
 .packages .box-container .box .image{
-    height: 30rem;
+    height: 20rem;
     width: 100%;
     overflow:hidden;
     border-radius: .5rem;
@@ -377,7 +273,7 @@ fix
 }
 
 .packages .box-container .box .content .price{
-    font-weight: 200;
+    font-weight: 600;
     color:var(--text-color-1);
     font-size: 2.5rem;
 }
@@ -395,11 +291,115 @@ fix
     color:var(--text-color-2);
     line-height: 1.7;
 }
+ 
+.leader .box-container{
+    display: grid;
+    width:  32em;
+    gap: 0.2rem;
+}
+
+.leader .box-container .box{
+    background:var(--bg-color-3);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.leader .box-container .box .image{
+    height:25rem;
+    width: 100%;
+    padding:1.5rem;
+    position: relative;
+}
+
+.leader .box-container .box .image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.leader .box-container .box .image{
+    height: 20rem;
+    width: 100%;
+    overflow:hidden;
+    border-radius: .5rem;
+    background: var(--bg-color-2);
+}
+
+.leader .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.leader .box-container .box:hover .image img{
+    transform:scale(1.2);
+}
+
+.leader .box-container .box .content .icons{
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid var(--text-color-2);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+.leader .box-container .box .content .icons a{
+    font-size: 1.5rem;
+    color:var(--text-color-2);
+}
+
+.leader .box-container .box .content .icons a:hover{
+    color:var(--orange);
+}
+
+.leader .box-container .box .content .icons a i{
+    padding-right: .5rem;
+    color:var(--text-color-1);
+}
 
 
+.leader .box-container .box .image h3{
+    position: absolute;
+    top:2.5rem; left:1.8rem;
+    font-size: 2rem;
+    color:#fff;
+    background: rgba(0,0,0,.5);
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding:.5rem 1.5rem;
+}
+
+.leader .box-container .box .image h3 i{
+    color:var(--orange);
+}
+
+.leader .box-container .box .content{
+    padding:1.5rem;
+    padding-top: 0;
+}
+
+.leader .box-container .box .content .price{
+    font-weight: 600;
+    color:var(--text-color-1);
+    font-size: 2.5rem;
+}
+
+.leader .box-container .box .content .price span{
+    font-weight: lighter;
+    color:var(--text-color-2);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.leader .box-container .box .content p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:var(--text-color-2);
+    line-height: 1.7;
+}
 .br {margin-bottom: 10em}
 .br1 {margin-bottom: 30em}
-
+.br2{margin-bottom: 3em;}
 .footer{
     background: var(--bg-color-1);
 }

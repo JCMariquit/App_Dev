@@ -41,7 +41,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 body {
-  background-image: url('background.jpg');
+  background-image: url('../images/background/background.jpg');
 }
 body.active{
     --text-color-1:#fff;
@@ -246,7 +246,7 @@ section{
     font-size: 4rem;
     border-radius: .5rem;
     margin-left: 4.5rem;
-    background:var(--bg-color-2);
+    background:var(--bg-color-3);
     color:var(--text-color-1);
     cursor: pointer;
     text-align: center;
@@ -484,68 +484,3 @@ section{
 
 
 
-
-
-
-
-
-/* media queries  */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    .header{
-        padding:1.5rem 2rem;
-    }
-
-    section{
-        padding:2rem;
-    }
-
-}
-
-@media (max-width:768px){
-
-    .header .navbar{
-        right: 2rem;
-    }
-
-    .header .login-form{
-        right: 2rem;
-    }
-
-    #search-btn{
-        display:inline-block;
-    }
-
-    .header .search-form{
-        position: absolute;
-        top:115%; right: 2rem;
-        background:var(--bg-color-3);
-        border-radius: .5rem;
-        width: 90%;
-        box-shadow: var(--box-shadow);
-        transform:scale(0);
-        transform-origin: top right;
-    }
-
-    .header .search-form.active{
-        transform:scale(1);
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    .contact form .inputBox input{
-        width: 100%;
-    }
-
-}
