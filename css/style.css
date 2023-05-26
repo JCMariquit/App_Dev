@@ -94,7 +94,7 @@ section{
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    padding:.8rem 6rem;
+    padding:.8rem 5rem;
     font-size: 1.7rem;
     color:#fff;
     background:#006400;
@@ -160,12 +160,12 @@ section{
 }
 
 .header .icons div{
-    height:4.5rem;
-    width:4.5rem;
+    height:4rem;
+    width:4rem;
     line-height:4.5rem;
     font-size: 2rem;
-    border-radius: .5rem;
-    margin-left: .5rem;
+    border-radius: .3rem;
+    margin-left: .1rem;
     background:var(--bg-color-2);
     color:var(--text-color-1);
     cursor: pointer;
@@ -314,7 +314,7 @@ section{
 
 .packages .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap:1.5rem;
 }
 
@@ -412,7 +412,7 @@ section{
 }
 
 .packages .box-container .box .content p{
-    font-size: 1.5rem;
+    font-size: auto;
     padding:.5rem 0;
     color:var(--text-color-2);
     line-height: 1.7;
